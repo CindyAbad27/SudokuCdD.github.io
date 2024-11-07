@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(241, 243, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lucida Sans';
+}
+
+h1, h2 { 
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}
+
+table { 
+    font-family: 'Lucida Sans';
+    border: 2px solid #5c484e;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 2px solid black; 
+}
+
+td { 
+    border: 1px solid #5c484e;
+    width: 50px;
+    height: 50px;
+} 
+
+td:nth-child(3n+1) { 
+    border-left: 2px solid black; 
+} 
+
+tr:nth-child(3n+1) td {
+    border-top: 2px solid black; 
+}
+
+input[type="text"] { 
+    width: 100%;
+    font-family: 'Lucida Sans';
+    height: 100%;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    color: #333; /* Color de los números ingresados por el usuario */
+}
+
+input[type="text"]:disabled { 
+    font-family: 'Lucida Sans';
+    background-color: #edf5fc;
+    color: #333; /* Color de los números deshabilitados */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Añade espacio entre los botones */
+}
+    
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFE5D9;
+    font-size: 16px;
+    cursor: pointer;
+} 
+
+.btn:hover { 
+    background-color: #9D8189;
+}
+
+/* Estilo para conceptos clickeables en la lista */
+.concept-list ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.concept-list li { 
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #9D8189;
+    border-radius: 5px;
+    background-color: #FFE5D9;
+    cursor: pointer;
+    color: #6d4a54;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS';
+}
+
+.concept-list li:hover { 
+    background-color: #9D8189;
+}
